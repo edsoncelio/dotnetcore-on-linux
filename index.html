@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>.NET Core on Linux</title>
+    <meta name="description" content="">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <!-- EDIT -->
+    <meta property="og:url" content="http://your-url.com/permalink">
+
+    <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="">
+
+    <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-04-16T16:24:56">
+    <!-- EDIT -->
+    <meta property="og:image" content="" >
+    <!-- EDIT -->
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="429">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+
+    <!-- EDIT -->
+    <meta name="twitter:creator" content="@">
+    <!-- EDIT -->
+    <meta name="twitter:title" content="">
+    <!-- EDIT -->
+    <meta name="twitter:description" content="">
+    <!-- EDIT -->
+    <meta name="twitter:image" content="">
+
+    <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="/static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="/static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="/static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="/static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="/static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="/static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="/static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+
+  <body>
+    <header>
+      
+    </header>
+
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url('https://source.unsplash.com/R1J6Z1cnJZc/1600x800')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1>
+			    <p class = "text-emoji zoomIn">🐧</p>
+              <strong>Usando .NET Core no Linux</strong>
+            </h1>
+            <p class="text-symbols">* * * </p>
+            <p><a class="button ghost" href="https://github.com/edsoncelio/dotnetcore-on-linux" title="Repositório no Github">
+              <svg class="fa-cloud-download">
+                <use xlink:href="#fa-cloud-download"></use>
+              </svg> Github</a>
+            </p>
+				<p><i>Grupo de Estudos em Linux da Engenharia da Computação - UFC Sobral</i></p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap size-100 bg-black">
+            <h2>
+              <svg class="fa-info-circle large">
+                <use xlink:href="#fa-info-circle"></use>
+              </svg>
+              <strong>O que é o .NET Core?</strong>
+            </h2>
+            <hr>
+            <p>É uma variação do conhecido .NET Framework. Ele começa baseado na nova versão 4.6 do framework "completo". Ambos são desenvolvidos em conjunto pela Microsoft, mas o Core conta com ajuda da comunidade.</p>
+			<p>Não há grandes diferenças entre eles na parte mais básica. Apesar deles usaram a mesma base de código serão duas linhas de desenvolvimento independentes. O .NET Core não é necessário para o .NET Framework funcionar já que ele possui tudo o que precisa. E claro que o contrário também é verdadeiro.</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		<section>
+          <div class="wrap size-100 bg-black">
+            <h2>
+              <svg class="fa-info-circle large">
+                <use xlink:href="#fa-info-circle"></use>
+              </svg>
+              <strong>O que é o .NET Core?</strong>
+            </h2>
+            <hr>
+            <p>.NET Core is a new cross-platform .NET product.Os principais diferenciais do .NET Core são:</p>
+			<ol class="text-cols">
+              <li>Cross-platform</li>
+              <li>Flexible deployment</li>
+              <li>Command-line tools</li>
+              <li>Compatible</li>
+              <li>Open source</li>
+              <li>Supported by Microsoft</li>
+            </ol>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		<section>
+          <div class="wrap size-60 bg-black">
+            <h2>
+              <svg class="fa-info-circle large">
+                <use xlink:href="#fa-info-circle"></use>
+              </svg>
+              <strong>Em resumo</strong>
+			</h2>			
+			  <p><i>"NET Core is a cross-platform, open source, and modular .NET platform for creating modern web apps, microservices, libraries and console applications."</i></p>
+            
+            <hr>
+          
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        
+        <section class="bg-black">
+          <span class="background" style="background-image:url('https://source.unsplash.com/BYYu5nvQoUM/1600x800')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter fadeInUp">
+            <h3><strong>Pré-requisitos para o .NET Core no Linux</strong></h3>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		<section>
+          <div class="wrap size-60 bg-black">
+            <h2>
+              <svg class="fa-info-circle large">
+                <use xlink:href="#fa-info-circle"></use>
+              </svg>
+              <strong>Importante </strong>
+			</h2>			
+			  <p>O .NET Core 2.x trata o Linux como um único sistema operacional. Há um único build do Linux (por arquitetura de chip) para distribuições Linux com suporte.</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-80 bg-black">
+            <h2>Distribuições Suportadas .NET Core 2.0</h2>
+            <hr>
+            <ol class="text-cols">
+              <li</li>
+				<li>Red Hat Enterprise Linux 7</li>
+				<li>CentOS 7</li>
+				<li>Oracle Linux 7</li>
+				<li>Fedora 27</li>
+				<li>Debian 9, 8.7 ou versões posteriores</li>
+				<li>Ubuntu 18.04, 17.10, 16.04, 14.04</li>
+				<li>Linux Mint 18, 17</li>
+				<li>openSUSE 42.3 ou versões posteriores</li>
+				<li>SUSE Enterprise Linux (SLES) 12 Service Pack 2 ou versões posteriores</li>
+            </ol>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		<section class="bg-black">
+          <span class="background" style="background-image:url('https://source.unsplash.com/BYYu5nvQoUM/1600x800')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter fadeInUp">
+            <h3><strong>Configuração de Ambiente no Linux Mint</strong></h3>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-60 bg-black">
+            <h3><strong>Visual Studio Code</strong></h3>
+            <p class="text-intro">Editor de Código Fonte</p>
+            <hr>
+            <p>O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código.</p>
+            <p>adicionar link para download</p>
+		  </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-70 bg-black">
+            <h2><strong>Instalação do .NET SDK</strong></h2>
+            <p class="text-intro">Registro da chave da Microsoft</p>
+				<p><code>wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb <br> 
+				sudo dpkg -i packages-microsoft-prod.deb</code></p>
+			
+			<p class="text-intro">Instalação do .NET SDK via <code>apt-get</code></p>
+            <p><code>sudo apt-get install apt-transport-https <br>
+					sudo apt-get update <br>
+					sudo apt-get install dotnet-sdk-2.0.0</code></p>
+          </div
+          <!-- .end .wrap -->
+        </section>
+		<section class="bg-black">
+          <span class="background" style="background-image:url('https://source.unsplash.com/BYYu5nvQoUM/1600x800')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter fadeInUp">
+            <h3><strong>Ferramenta CLI <code>dotnet</code></strong></h3>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		 <section>
+          <div class="wrap size-70 bg-black">
+            <h2>
+              <svg class="fa-info-circle large">
+                <use xlink:href="#fa-info-circle"></use>
+              </svg>
+              <strong>O que é a ferramenta CLI <code>dotnet?</code></strong>
+            </h2>
+			<p> É um driver geral para executar os comandos da linha de comando.</p>
+			<hr>
+            <p><code>dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [-d|--diagnostics] [--fx-version] [-h|--help] [--info] [--roll-forward-on-no-candidate-fx] [-v|--verbosity] [--version]
+</code></p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		<section class="bg-black">
+          <span class="background" style="background-image:url('https://source.unsplash.com/BYYu5nvQoUM/1600x800')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter fadeInUp">
+            <h3><strong>Comandos Básicos do <code>dotnet</code></strong></h3>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		 <section>
+          <div class="wrap size-70 bg-black">
+            <h2>
+              <strong><code>dotnet new </code></strong>
+            </h2>
+			
+			<p>Cria um novo projeto, arquivo de configuração ou solução com base no modelo especificado..</p>
+			<hr>
+            <p>Exemplo: <br ><code>dotnet new console </code> - Cria um novo projeto com o tipo <code>console</code></p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		<section>
+          <div class="wrap size-70 bg-black">
+            <h2>
+              <strong><code>dotnet run </code></strong>
+            </h2>
+			<p>Executa o código-fonte sem qualquer comando de compilação ou inicialização explícito.</p>
+			<hr>
+            <p>Exemplo: <br ><code>dotnet run</code> - Executa o projeto no diretório atual</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		<section>
+          <div class="wrap size-70 bg-black">
+            <h2>
+              <strong><code>dotnet build</code></strong>
+            </h2>
+			<p>Compila um projeto e todas as suas dependências.</p>
+			<hr>
+            <p>Exemplo: <br ><code>dotnet build</code> - Compila um projeto do diretório atual e suas dependências</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		<section>
+          <div class="wrap size-70 bg-black">
+            <h2>
+              <strong><code>dotnet clean</code></strong>
+            </h2>
+			<p>Limpa a saída de um projeto.</p>
+			<hr>
+            <p>Exemplo: <br ><code>dotnet clean</code> - Limpa uma compilação padrão do projeto</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		<section>
+          <div class="wrap size-70 bg-black">
+            <h2>
+              <strong><code>dotnet publish</code></strong>
+            </h2>
+			<p>Empacota o aplicativo e suas dependências em uma pasta para implantação em um sistema de hospedagem.</p>
+			<hr>
+            <p>Exemplo: <br ><code>dotnet publish -- configuration Release</code> - Publica uma <i>Release</i> do projeto</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		<section>
+          <div class="wrap size-60 bg-black">
+            <h2>
+              <strong><code>dotnet publish</code></strong>
+            </h2>
+			<p>Parâmetros opcionais</p>
+			<hr>
+            <p><code>-o|--output <OUTPUT_DIRECTORY> </code> - Especifica o caminho para o diretório de saída. </p>
+			<br>
+			<p><code>-c|--configuration {Debug|Release}</code> - Define a configuração da compilação. O valor padrão é Debug.</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		<section>
+          <div class="wrap size-60 bg-black">
+            <h2>
+              <strong><code>dotnet test</code></strong>
+            </h2>
+			<p>Driver de teste do .NET usado para executar testes de unidade.</p>
+			<hr>
+            <p>Exemplo: <br ><code>dotnet test</code> - Executa os testes no projeto no diretório atual</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+       <section class="bg-black">
+          <span class="background" style="background-image:url('https://source.unsplash.com/BYYu5nvQoUM/1600x800')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter fadeInUp">
+            <h3><strong>Hello World em .NET Core</strong></h3>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		
+		<section>
+          <div class="wrap size-60 bg-black">
+            <h2>
+              <strong>Criar o projeto</strong>
+            </h2>
+			<p>Criar um projeto do tipo <code>console</code> em um diretorio nomeado HelloWorld:</p>
+
+            <p><code>dotnet new console –o MinhaAplicacao</code></p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		
+		<section>
+          <div class="wrap size-60 bg-black">
+            <h2>
+              <strong>Editar o projeto</strong>
+            </h2>
+			<p>No diretório <code>HelloWorld</code>, editar o arquivo <code>program.cs</code> e adicionar a mensagem:</p>
+
+            <p><code>Console.WriteLine (“Hello World .NET Core no Linux”);</code></p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		<section>
+          <div class="wrap size-60 bg-black">
+            <h2>
+              <strong>Executar o projeto</strong>
+            </h2>
+			<p>No diretório <code>HelloWorld</code>, executar o projeto:</p>
+
+            <p><code>dotnet run </code></p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		<section>
+          <div class="wrap size-60 bg-black">
+            <h2>
+              <strong>Publicar o projeto</strong>
+            </h2>
+			<p>No diretório <code>HelloWorld</code>, construir uma <i>Release</i> do projeto:</p>
+
+            <p><code>dotnet publish --configuration Release</code></p>
+			<br>
+			<p>Verificar se a <i>Release</i> foi gerada com sucesso no diretório padrão</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+       <section class="bg-black aligncenter">
+          <h2 class="text-emoji zoomIn">🐧</h2>
+          <h2><strong>Obrigado pela atenção!</strong></h2>
+          <p><a href="https://twitter.com/tuxpilgrim" title="@Tuxpilgrim">@Tuxpilgrim</a></p>
+        </section>  
+
+      </article>
+    </main>
+    <!--main-->
+
+    <footer>
+      
+    </footer>
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script> <!-- Autoslide? window.ws = new WebSlides({ autoslide: 8000 }); -->
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+  </body>
+</html>
